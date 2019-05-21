@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Веко Мото Люкс</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    <link rel="stylesheet" href="css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+    <header>
+        <div class="navbar navbar-dark">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8 col-8">
+                <img src="images/logo.png" alt="" class="navbar-brand">
+            </div>
+    
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 d-none d-md-flex">
+                <div class="time_work">
+                    <span><a href=""><i class="fas fa-phone"></i> 050-280-81-65</a></span><br>
+                    <span><a href=""><i class="fas fa-phone"></i> 050-280-81-65</a></span><br>
+                    <span><a href=""><i class="fas fa-phone"></i> 050-280-81-65</a></span>
+                </div>
+            </div>
+    
+            <div class="col-xl-2 col-lg-3 col-md-4 d-none d-md-flex">
+                <div class="time_work">
+                    <span><i class="fas fa-clock"></i><strong> Пн-Пт:</strong>&nbsp;09:00–18:00</span><br>
+                    <span><i class="fas fa-clock"></i><strong> Сб:&nbsp;</strong>09:00–16:00</span><br>
+                    <span><i class="fas fa-clock"></i><strong> Вс: </strong><span style="line-height: 22px;">выходной</span></span>
+                </div>
+            </div>
+    
+            <div class="col-xl-5 col-lg-4  col-md-12  col-sm-12  col-12 row">
+                <form class="form-inline col-xl-6 col-lg-12 col-md-6 col-sm-12 col-12">
+                    <input class="form-control col-xl-8 col-lg-6 col-md-6 col-sm-6 col-12" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12" type="submit">Поиск</button>
+                </form>
+                <div class="btn-group col-xl-6 col-lg-12 col-md-6  col-sm-12 col-12">
+                    <button type="button" class="btn btn-outline-success col-lg-6 col-md-6 col-sm-6 col-6" data-toggle="modal" data-target="#myModalLogin">Вход</button>
+                    <button type="button" class="btn btn-outline-success col-lg-6 col-md-6 col-sm-6 col-6" data-toggle="modal" data-target="#myModalRegistration">Регистрация</button>
+                </div>
+    
+            </div>
+    
+    
+    
+    
+    
+    <!--MODAL-->
+            <div class="modal fade" id="myModalRegistration">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Регистрация</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Введите свой email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Номер телефона</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Имя</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Фамилия</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Дата рождения</label>
+                                    <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Пароль</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Повторите пароль</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="modal fade" id="myModalLogin">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Вход</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Введите свой email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Пароль</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Войти</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    
+        <nav class="navbar  navbar-dark navbar-expand-sm navbar-collapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Категория 1</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Под-Категория 1</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Под-Категория 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Под-Категория 3</a>
+                        </div>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Категория 1</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Под-Категория 1</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Под-Категория 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Под-Категория 3</a>
+                        </div>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Категория 1</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Под-Категория 1</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Под-Категория 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Под-Категория 3</a>
+                        </div>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Категория 1</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Под-Категория 1</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Под-Категория 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Под-Категория 3</a>
+                        </div>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Категория 1</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Под-Категория 1</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Под-Категория 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Под-Категория 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+    <!--Карусель-->
+        <div class="container-fluid">
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="10000">
+                        <img src="images/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-interval="2000">
+                        <img src="images/2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    
+    
+        <div class="container">
+            <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link btn-outline-secondary active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Хиты продаж</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-outline-secondary" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Распродажа</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-outline-secondary" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Новинки</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-blue"> ХИТ</div>
+                                <img src="images/tov1.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 1</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-blue"> ХИТ</div>
+                                <img src="images/tov2.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 2</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">1296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-blue"> ХИТ</div>
+                                <img src="images/tov3.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 3</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum rtu rtu rtu rutg erg erg erg erg erg reg erg er g erg erg rg  erg3rg rg erg erg erg e rg rtj rtj rtj dolor sdjrtj rtjrtjr tjtjrt jrtjrt jrtjrtjit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">11296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-blue"> ХИТ</div>
+                                <img src="images/tov4.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 4</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">111296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-orange"> -10%</div>
+                                <img src="images/tov1.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 1</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-orange"> -10%</div>
+                                <img src="images/tov2.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 2</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">1296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-orange"> -10%</div>
+                                <img src="images/tov3.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 3</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum rtu rtu rtu rutg erg erg erg erg erg reg erg er g erg erg rg  erg3rg rg erg erg erg e rg rtj rtj rtj dolor sdjrtj rtjrtjr tjtjrt jrtjrt jrtjrtjit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">11296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-orange"> -10%</div>
+                                <img src="images/tov4.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 4</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">111296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-green"> NEW</div>
+                                <img src="images/tov1.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 1</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-green"> NEW</div>
+                                <img src="images/tov2.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 2</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">1296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-green"> NEW</div>
+                                <img src="images/tov3.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 3</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum rtu rtu rtu rutg erg erg erg erg erg reg erg er g erg erg rg  erg3rg rg erg erg erg e rg rtj rtj rtj dolor sdjrtj rtjrtjr tjtjrt jrtjrt jrtjrtjit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">11296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="flag flag-green"> NEW</div>
+                                <img src="images/tov4.jpg" alt="" class="card-img-top">
+                                <div class="card-header"><h5 class="card-title">Товар 4</h5></div>
+                                <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corp deleniti dignissimos ebus.</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="card-link col-6">Купить</a>
+                                        <span class="col-6">111296 грв</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-xl-7 col-lg-7 col-md-4 col-sm-4 col-12">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5">
+                        <img src="images/logo.png" alt="">
+                        <p>© 2014—2019</p>
+                        <p>Motolux - Online Shopping</p>
+                    </div>
+                    <div class="col-xl-8 col-lg-7 d-none d-lg-flex">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6">
+                                <p>Каталог</p>
+                                <ul>
+                                    <li><a href="" class="">Агротехника</a></li>
+                                    <li><a href="">Всё для дома</a></li>
+                                    <li><a href="">Садовая техника</a></li>
+                                    <li><a href="">Спецтехника</a></li>
+                                    <li><a href="">Мототехника</a></li>
+                                    <li><a href="">Электротранспорт</a></li>
+                                    <li><a href="">Спорт и отдых</a></li>
+                                    <li><a href="">Электроника</a></li>
+                                    <li><a href="">Инструменты и оборудование</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <p>Клиентам</p>
+                                <ul>
+                                    <li><a href="">Вход в личный кабинет</a></li>
+                                    <li><a href="">Каталог</a></li>
+                                    <li><a href="">О нас</a></li>
+                                    <li><a href="">Магазины</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                    <li><a href="">Блог</a></li>
+                                    <li><a href="">Сотрудничество</a></li>
+                                    <li><a href="">Пользовательское соглашение</a></li>
+                                    <li><a href="">Отзывы о магазине</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-8 col-sm-8 col-12">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <p>Контактная информация</p>
+                        <div><a href=""><i class="fas fa-phone"></i> 050-280-81-65</a></div>
+                        <div><a href=""><i class="fas fa-phone"></i> 050-280-81-65</a></div>
+                        <div><a href=""><i class="fas fa-phone"></i> 050-280-81-65</a></div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <p>Как нас найти</p>
+                        <div><a href="https://www.google.com.ua/maps/place/48%C2%B031'25.0%22N+23%C2%B030'02.4%22E/@48.5238304,23.5012809,17.63z/data=!4m6!3m5!1s0x0:0x0!7e2!8m2!3d48.5236152!4d23.5006551?hl=ru" target="_blank"><i class="fas fa-map-marker-alt"></i> Закарпатская область, с.Межигорье, ул.Томаша Масарика 54</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
