@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <article class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="{{ product.image.url }}" style="width: 125px; height: 250px;" alt="">
+            </div>
+            <div class="col-8">
+                <h1 class="text-center">{{ product.name }}</h1>
+                <p>{% lorem %}</p>
+                <hr>
+                <p>Цена: {{ product.price }} Гривен</p>
+                <p>Гарантия: {{ product.warranty }} месяцев</p>
+                <a href=""><button class="btn btn-danger">Добавить в корзину</button></a>
+            </div>
+        </div>
+    </article>
+{% endblock %}
