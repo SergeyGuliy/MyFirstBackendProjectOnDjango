@@ -1,18 +1,21 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+{% endblock head %}
+
 {% block content %}
     <article class="container">
-        <div class="row">
-            <div class="col-4">
-                <img src="{{ product.image.url }}" style="width: 125px; height: 250px;" alt="">
-            </div>
-            <div class="col-8">
-                <h1 class="text-center">{{ product.name }}</h1>
-                <p>{% lorem %}</p>
-                <hr>
-                <p>Цена: {{ product.price }} Гривен</p>
-                <p>Гарантия: {{ product.warranty }} месяцев</p>
-                <a href=""><button class="btn btn-danger">Добавить в корзину</button></a>
-            </div>
-        </div>
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="{{ product.image.url }}" alt="" class="card-img-top">
+                    <div class="card-header"><h5 class="card-title">{{ product.name }}</h5></div>
+                    <div class="card-body"><p class="card-text">{% lorem %}</p></div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <a href="" class="card-link col-6">Купить</a>
+                            <span class="col-6">{{ product.price }} грв</span>
+                        </div>
+                    </div>
+                </div>
     </article>
 {% endblock %}

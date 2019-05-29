@@ -1,18 +1,40 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+{% endblock head %}
+
 {% block content %}
     <article class="container">
         <div class="row">
             <div class="col-12">
-                <h2>{{ category.name }}</h2>
+                <h2 class="text-center">{{ category.name }}</h2>
                 <div class="row">
                     {% for product in products_of_category %}
-                        <div class="col-4">
-                            <img src="{{ product.image.url }}" alt="">
-                        </div>
+                    <div class="col-4">
+
+                            <div class="card w-100" style="width: 18rem;">
+                                <a href="{{ product.get_absolute_url }}">
+                                    <img src="{{ product.image.url }}" alt="" class="card-img-top">
+                                </a>
+                                <div class="card-header">
+                                    <a href="{{ product.get_absolute_url }}">
+                                        <h5 class="card-title">{{ product.name }}</h5>
+                                    </a>
+                                </div>
+                                <div class="card-body"><p class="card-text">{% lorem %}</p></div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <a href="" class="btn btn-danger ATcard-link col-6">Купить</a>
+                                        <span class="col-6">{{ product.price }} грв</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
                     {% endfor %}
                 </div>
-
-                
             </div>
         </div>
     </article>

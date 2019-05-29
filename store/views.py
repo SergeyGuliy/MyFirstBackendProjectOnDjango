@@ -12,14 +12,14 @@ from store.models import *
 #     }
 #     return render(request, 'base.html', context)
 
-def base_view(request):
+def main_view(request):
     parrentCategories = ParentCategory.objects.all()
     categories = Category.objects.all
     context = {
         'parrentCategories': parrentCategories,
         'categories': categories
     }
-    return render(request, 'base.html', context)
+    return render(request, 'main.html', context)
 
 
 def product_view(request, product_slug):
