@@ -22,6 +22,7 @@ class Brand(models.Model):
 class ParentCategory(models.Model):
     name = models.CharField(max_length=50)
     slug = models.SlugField(blank=True)
+    image = models.ImageField(upload_to= image_folder, blank=True)
 
     def __str__(self):
         return self.name
@@ -34,6 +35,7 @@ class Category(models.Model):
     name = models.CharField(max_length=50)
     slug = models.SlugField(blank=True)
     parentCategory = models.ForeignKey(ParentCategory, on_delete=models.CASCADE, default=None, db_index=True)
+    image = models.ImageField(upload_to= image_folder, blank=True)
 
     def __str__(self):
         return self.name
@@ -58,6 +60,23 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return reverse('product_detail', kwargs={'product_slug': self.slug})
+
+
+class CartItem(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField(default=1)
+    item_total_price = models.DecimalField(max_digits=9, decimal_places=2, default=0)
+
+    def __str__(self):
+        return "Cart Item for product {0}".format(self.product.name)
+
+
+class Cart(models.Model):
+    items = models.ManyToManyField(CartItem, blank=True)
+    cart_total_price = models.DecimalField(max_digits=9, decimal_places=2, default=0)
+
+    def __str__(self):
+        return str(self.id)
 
 
 def pre_save_category_slug(sender, instance, *args, **kwargs):

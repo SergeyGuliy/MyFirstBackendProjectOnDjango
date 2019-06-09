@@ -20,7 +20,7 @@
     <header>
         <div class="navbar navbar-dark">
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8 col-8">
-                <img src="{% static 'images/logo.png' %}" alt="" class="navbar-brand">
+                <a href="http://127.0.0.1:8000/"><img src="{% static 'images/logo.png' %}" alt="" class="navbar-brand"></a>
             </div>
     
             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 d-none d-md-flex">
@@ -52,8 +52,7 @@
             </div>
     
     
-    
-    
+
     
     <!--MODAL-->
             <div class="modal fade" id="myModalRegistration">
@@ -168,9 +167,12 @@
                             </div>
                         </li>
                     {% endfor %}
-
-
                 </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li><a href="{% url 'cart' %}" class="nav-link">Корзина <span class="badge">{{ cart.items.count }}</span></a></li>
+                </ul>
+
+
             </div>
         </nav>
 
@@ -180,7 +182,8 @@
     </header>
 
     {% block content %}
-        <h1>Hello</h1>
+
+
     {% endblock content %}
 
 
@@ -198,29 +201,18 @@
                             <div class="col-xl-6 col-lg-6">
                                 <p>Каталог</p>
                                 <ul>
-                                    <li><a href="" class="">Агротехника</a></li>
-                                    <li><a href="">Всё для дома</a></li>
-                                    <li><a href="">Садовая техника</a></li>
-                                    <li><a href="">Спецтехника</a></li>
-                                    <li><a href="">Мототехника</a></li>
-                                    <li><a href="">Электротранспорт</a></li>
-                                    <li><a href="">Спорт и отдых</a></li>
-                                    <li><a href="">Электроника</a></li>
-                                    <li><a href="">Инструменты и оборудование</a></li>
+                                    {% for parrentCategory in parrentCategories %}
+                                        <li><a href="{{ parrentCategory.get_absolute_url }}">{{ parrentCategory.name }}</a></li>
+                                    {% endfor %}
+                                </ul>
                                 </ul>
                             </div>
                             <div class="col-xl-6 col-lg-6">
                                 <p>Клиентам</p>
                                 <ul>
                                     <li><a href="">Вход в личный кабинет</a></li>
-                                    <li><a href="">Каталог</a></li>
-                                    <li><a href="">О нас</a></li>
                                     <li><a href="">Магазины</a></li>
-                                    <li><a href="">Контакты</a></li>
-                                    <li><a href="">Блог</a></li>
-                                    <li><a href="">Сотрудничество</a></li>
-                                    <li><a href="">Пользовательское соглашение</a></li>
-                                    <li><a href="">Отзывы о магазине</a></li>
+                                    <li><a href="">Сотрудничество</a></li>2
                                 </ul>
                             </div>
                         </div>
